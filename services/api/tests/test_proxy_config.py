@@ -1493,7 +1493,7 @@ def test_render_http_secret_can_override_global_secret_source(
             name="ANTHROPIC_API_KEY",
             secret_ref="ANTHROPIC_AUTH_TOKEN",
             source_kind="env",
-            hosts=("api.minimax.io",),
+            hosts=("anthropic-compatible.example.test",),
             match_headers=("X-Api-Key", "Authorization"),
         )
     ]
